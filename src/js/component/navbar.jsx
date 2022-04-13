@@ -5,7 +5,7 @@ function NavBar() {
 		<>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<a className="navbar-brand" href="#">
-					<i class="fa-solid fa-house"></i>
+					<i className="fas fa-house-user">Inicio</i>
 				</a>
 				<button
 					className="navbar-toggler"
