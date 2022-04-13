@@ -3,9 +3,13 @@ import React from "react";
 function NavBar() {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<nav className="navbar navbar-expand-lg navbar-light bg-light" style= {{backgroundcolor: "yellow"}}>
 				<a className="navbar-brand" href="#">
-				<i class="fas fa-house-user"></i>
+					<img
+						src="https://s03.s3c.es/imag/_v0/770x420/5/7/a/japon-iconos-770.jpg"
+						style={{ width: "80px", height: "40px" }}
+						alt=""
+					/>
 				</a>
 				<button
 					className="navbar-toggler"
