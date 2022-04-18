@@ -2,14 +2,10 @@ import React from "react";
 
 function Card(props) {
 	return (
-		<div className="d-flex justify-content-center ">
-			<div
-				className="card "
-				style={{
-					width: "18rem",
-					height: "80px",
-					margin: "5px 30px auto 0",
-				}}>
+		<div
+			className=" col-md-3 d-flex justify-content-center"
+			style={{ minHeight: "500px" }}>
+			<div className=" card" style={{ marginTop: "5px" }}>
 				<img
 					className="card-img-top"
 					src={props.src}

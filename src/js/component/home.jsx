@@ -6,15 +6,16 @@ import React from "react";
 import Card from "./card.jsx";
 import NavBar from "./navbar.jsx";
 import Header from "./header.jsx";
+import Footer from "./footer.jsx";
 const Home = () => {
 	return (
 		<>
 			<NavBar />
 
-			<div className="container">
+			<div className="container-fluid">
 				<Header />
 
-				<div className="d-flex" style={{ margin: "auto" }}>
+				<div className="row" style={{ margin: "auto" }}>
 					<Card
 						src="https://us.123rf.com/450wm/pitinan/pitinan1904/pitinan190404410/121655857-hermosa-ma%C3%B1ana-en-la-pagoda-yasaka-y-sannen-zaka-street-en-verano-kyoto-jap%C3%B3n-la-pagoda-de-yasaka-es.jpg?ver=6"
 						titulo="Paisaje de Japón"
@@ -38,6 +39,8 @@ const Home = () => {
 					/>
 				</div>
 			</div>
+
+			<Footer />
 		</>
 	);
 };

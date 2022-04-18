@@ -3,11 +3,15 @@ import React from "react";
 function NavBar() {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light" style= {{backgroundcolor: "yellow"}}>
+			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<a className="navbar-brand" href="#">
 					<img
 						src="https://s03.s3c.es/imag/_v0/770x420/5/7/a/japon-iconos-770.jpg"
-						style={{ width: "80px", height: "40px" }}
+						style={{
+							width: "90px",
+							height: "50px",
+							marginLeft: "10px",
+						}}
 						alt=""
 					/>
 				</a>
@@ -30,17 +34,17 @@ function NavBar() {
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								Features
+								About
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								Pricing
+								Services
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link disabled" href="#">
-								Disabled
+								Contact
 							</a>
 						</li>
 					</ul>

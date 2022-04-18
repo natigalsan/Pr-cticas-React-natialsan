@@ -6,62 +6,76 @@ function Header() {
 			<div
 				id="carouselExampleIndicators"
 				className="carousel slide"
-				data-ride="carousel">
-				<ol className="carousel-indicators">
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="0"
-						className="active"></li>
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="1"></li>
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="2"></li>
-				</ol>
+				data-bs-ride="carousel">
+				<div className="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						className="active"
+						aria-current="true"
+						aria-label="Slide 1"></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
 				<div className="carousel-inner">
-					<div className="carousel-item active">
+					<div
+						className="carousel-item active"
+						style={{ maxHeight: "210px" }}>
 						<img
-							className="d-block w-100"
 							src="https://pangea-public-content.s3-eu-west-1.amazonaws.com/files/Country/71/viaje-a-japon.jpg"
-							alt="First slide"
-						/>
-					</div>
-					<div className="carousel-item">
-						<img
 							className="d-block w-100"
-							src="https://static.amazon.jobs/locations/31/images/tokyo-banner.jpg?1617654113"
-							alt="Second slide"
+							alt="..."
 						/>
 					</div>
-					<div className="carousel-item">
+					<div
+						className="carousel-item"
+						style={{ maxHeight: "210px" }}>
 						<img
-							className="d-block w-100px"
 							src="https://media.traveler.es/photos/61377e40c6202df7591613ff/master/w_1600%2Cc_limit/79297.jpg"
-							alt="Third slide"
+							className="d-block w-100"
+							alt="JAPAN"
+						/>
+					</div>
+					<div
+						className="carousel-item"
+						style={{ maxHeight: "210px" }}>
+						<img
+							src="https://static.amazon.jobs/locations/31/images/tokyo-banner.jpg?1617654113
+								"
+							className="d-block w-100"
+							alt="..."
 						/>
 					</div>
 				</div>
-				<a
+				<button
 					className="carousel-control-prev"
-					href="#carouselExampleIndicators"
-					role="button"
-					data-slide="prev">
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
 					<span
 						className="carousel-control-prev-icon"
 						aria-hidden="true"></span>
-					<span className="sr-only">Previous</span>
-				</a>
-				<a
+					<span className="visually-hidden">Previous</span>
+				</button>
+				<button
 					className="carousel-control-next"
-					href="#carouselExampleIndicators"
-					role="button"
-					data-slide="next">
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
 					<span
 						className="carousel-control-next-icon"
 						aria-hidden="true"></span>
-					<span className="sr-only">Next</span>
-				</a>
+					<span className="visually-hidden">Next</span>
+				</button>
 			</div>
 		</>
 	);
