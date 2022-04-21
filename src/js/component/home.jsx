@@ -12,7 +12,7 @@ const Home = () => {
 		<>
 			<NavBar />
 
-			<div className="container-fluid">
+			<div className="container">
 				<Header />
 
 				<div className="row" style={{ margin: "auto" }}>
